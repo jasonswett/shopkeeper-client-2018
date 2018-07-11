@@ -24,7 +24,7 @@
   function addProductSuccess() {
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
       if (httpRequest.status === 201) {
-        document.getElementById('content').innerHTML = 'Product saved';
+        alert('Product saved');
       } else {
         alert('There was a problem with the request.');
       }
