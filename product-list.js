@@ -4,12 +4,6 @@
 
   function loadProductList() {
     httpRequest = new XMLHttpRequest();
-
-    if (!httpRequest) {
-      alert('Cannot create an XMLHTTP instance');
-      return false;
-    }
-
     httpRequest.onreadystatechange = loadProductListSuccess;
     httpRequest.open('GET', 'http://localhost:3000/products');
     httpRequest.send();
